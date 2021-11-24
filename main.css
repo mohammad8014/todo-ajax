@@ -1,0 +1,131 @@
+.form-control {
+    width: 90%;
+    padding: 0.320rem 0.60rem;
+
+  }
+
+  li {
+    list-style: none;
+    margin: 3px 0;
+    position: relative;
+  }
+
+  input[type='checkbox']:checked+span {
+    text-decoration: line-through;
+  }
+
+  .allbox {
+    border-bottom: gray 1px solid;
+    border-radius: 0px !important;
+    padding: 3.5px;
+  }
+
+  .allbox:last-of-type {
+    border-bottom: none;
+  }
+  .allbox:hover{
+    background-color: rgba(82, 82, 82, 0.253);
+
+  }
+
+
+  /* pajination */
+
+  .list{
+      width: 80%;
+      background-color: rgb(255, 255, 255);
+      /* border: 1px solid #ccc; */
+      margin: 0;
+  }
+
+  .list .item{
+      border-bottom: 1px solid #ccc;
+      padding: 0% !important;
+  }
+ 
+  .list .item:last-of-type{
+      border-bottom: none;
+  }
+
+
+  /*  */
+
+
+.pagination{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+}
+.pagination button{
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid gray;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    margin: 25px 3px;
+    transition: 0.4s;
+    font-size: 18px;
+    color: rgb(0, 102, 255);
+    text-shadow:  0 0 4px rgba(46, 46, 46, 0.363);
+}
+
+.pagination button:hover{
+    background-color: rgb(0, 81, 255);
+    color:rgb(255, 255, 255) ;
+    box-shadow: inset 0 0 1px blue;
+}
+
+.pagination button.active{
+    background-color: rgb(0, 81, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 4px rgba(53, 53, 53, 0.39);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+  let todo = document.getElementById('todo')
+
+
+  let myUr = "https://61895f90d0821900178d7971.mockapi.io/todos"
+  let response = fetch(myUr);
+
+  response
+      .then((data) => {
+          if (data.status === 200) {
+              return data.json();
+          } else {
+              throw new Error("We Have an error");
+
+          }
+      })
+      .then((data) => {
+          let html = ``
+          for (let i = data.length - 1; i >= 0; i--) {
+              html +=           }
+
+
+
+
+
+          todo.innerHTML = html
+      })
+
+
+      .catch(err => {
+          console.log(err);
+      })
+ */

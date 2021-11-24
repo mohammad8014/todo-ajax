@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body onload="onloaded()">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bot-css/bootstrap.css">
+    <link rel="stylesheet" href="./bot-css/bootstrap.min.css">
+
+
+  </head>
+
+  <body>
+
+    <div class="body overflow-hidden bg-light vw-100 vh-100">
+      <div class="container py-3 ">
+        <div class="    mb-2 ">
+
+          <span style="cursor: pointer; color: rgb(70, 70, 70);">Home</span>
+          /
+          <span><a href="main.html" class="text-decoration-none">Todos</a></span>
+
+        </div>
+        <h1 class="text-lg-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+            class="mb-1 bi bi-check-square-fill" viewBox="0 0 16 16">
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+          </svg>
+          <A class=" .text-primary  ">My Todo-S</A>
+        </h1>
+
+
+        <div class=" add rounded-2 p-4 d-flex bg-danger bg-white shadow  justify-content-between mt-5 ">
+
+          <input id='title' type="text " class=" me-2   form-control  " name="" placeholder="Add new...">
+          <!-- <input class="" type="hidden" id="saveindex"> -->
+          <input id="dueDate" type="text" class="form-control me-2" placeholder="dueDate....">
+
+          <button id="btn" class="bg-primary px-4 py-1 text-light btn  ">Add</button>
+          <button id="savebtn" style="display: none;" class="bg-primary px-4 py-1 text-light btn   ">SAVE</button>
+
+        </div>
+
+        <hr class=" mt-4">
+
+        <div class=" add rounded-2 p-4 d-flex bg-danger bg-white shadow  justify-content-between mt-5 ">
+
+          <textarea id="description" style=" height: 200px;" placeholder="description...."
+            class=" p-2 form-control w-100 "></textarea>
+
+
+        </div>
+      </div>
+
+      <div id="snackbar">اطلاعات با موفقیت ثبت شد</div>
+
+    </div>
+  </body>
+  <script src="index.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./index.js"></script>
+
+</html>
